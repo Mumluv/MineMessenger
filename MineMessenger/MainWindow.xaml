@@ -1,0 +1,77 @@
+﻿<Window x:Class="MineMessenger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MineMessenger"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="#212433" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions >
+                    <RowDefinition/>
+                    <RowDefinition Height="11*"/>
+                </Grid.RowDefinitions>
+
+
+                <Button Width="89" Height="24" FontSize="15" Content="Регистрация" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Margin="0 8 160 2" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" Foreground="White" BorderBrush="#8A3678" Background="#FF1334A9">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Width="72" Height="24" FontSize="15" Content="Вход" HorizontalContentAlignment="Center" Grid.Column="1" HorizontalAlignment="Right" Margin="0 4 65 0"  Grid.Row="0" Foreground="White" BorderBrush="#8A3678" Background="#1334A9">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical" Margin=" 80 70 80 50" Background="#12172F">
+
+                    <TextBlock Text="Логин"  HorizontalAlignment="Left" Margin="25 8 0 8" FontSize="20" Background="#12172F" Foreground="White"/>
+
+                    <TextBox Height="30" Width="340" Background="#12172F" BorderThickness="1" BorderBrush="#A44689">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="12"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <TextBlock Text="Почта"  HorizontalAlignment="Left" Margin="25 8 0 8" FontSize="20" Background="#12172F" Foreground="White"/>
+                    <TextBox Height="30" Width="340" Background="#12172F" BorderThickness="1" BorderBrush="#A44689">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="12"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <TextBlock Text="Пароль"  HorizontalAlignment="Left" Margin="25 8 0 8" FontSize="20" Background="#12172F" Foreground="White"/>
+                    <TextBox Height="30" Width="340" Background="#12172F" BorderThickness="1" BorderBrush="#A44689">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="12"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <Button  Content="Регистрация" FontSize="20" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Margin="0 8 130 2"  VerticalAlignment="Top" Foreground="White" BorderBrush="#1334A9" Background="#1334A9">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+
+            </Grid>
+            <TextBlock Text="Присоединяйся!"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" FontSize="20" Foreground="White"/>
+        </Grid>
+    </Grid>
+</Window>
