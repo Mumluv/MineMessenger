@@ -55,6 +55,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnotherAcc.xaml.cs">
+      <DependentUpon>AnotherAcc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.xaml.cs">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyAcc.xaml.cs">
+      <DependentUpon>MyAcc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vxod.xaml.cs">
+      <DependentUpon>Vxod.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AnotherAcc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +87,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MyAcc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vxod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +121,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-search-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вертикальный-микшер-настроек-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вертикальный-микшер-настроек-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вертикальный-микшер-настроек-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-информация-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-голова-человека-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вверх-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-вложение-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-счастливый-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-настройки-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-редактировать-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-налево-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

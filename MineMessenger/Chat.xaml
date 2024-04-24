@@ -1,0 +1,138 @@
+﻿<Window x:Class="MineMessenger.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MineMessenger"
+        mc:Ignorable="d"
+        Title="Chat" Background="#212433" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions >
+                    <RowDefinition/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+
+                <Button Width="130" Height="30" FontSize="17" Content="Мой аккаунт" HorizontalContentAlignment="Center" HorizontalAlignment="Right" Margin="0 8 25 2" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" Foreground="White" BorderBrush="#8A3678" Background="#FF4F3571">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="6"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Border Grid.Column="1" Grid.Row="1" Margin="15 15 15 10"  Background="#12172F" CornerRadius="25">
+                    <Grid Grid.Column="1" Grid.Row="1" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="9*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="2">
+                            <TextBox Height="30"  Width="400" Background="#12172F" BorderThickness="2" BorderBrush="#A44689">
+                                <TextBox.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="16"/>
+                                    </Style>
+                                </TextBox.Resources>
+                            </TextBox>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <TextBox Height="30" Width="210" Text="Nmeee_" Foreground="White" FontSize="15" HorizontalContentAlignment="Center" Background="#212433" BorderThickness="2" BorderBrush="#A44689" >
+                                <TextBox.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="16"/>
+                                    </Style>
+                                </TextBox.Resources>
+                            </TextBox>
+                        </StackPanel>
+
+                    </Grid>
+                </Border>
+                <Image Margin="128,15,372,348" Source="/icons8-информация-50.png" Stretch="Fill" Grid.Row="1"/>
+                <Image Margin="470,344,21,10" Source="/icons8-вверх-50.png" Stretch="Fill" Grid.Row="1"/>
+                <Image Margin="28,349,468,14" Source="/icons8-вложение-24.png" Stretch="Fill" Grid.Row="1"/>
+            </Grid>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions >
+                    <RowDefinition/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+
+                <TextBox Height="30"  Width="264" Background="#12172F" Margin="-3 -60 0 10" BorderThickness="2" BorderBrush="#A44689">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="16"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </Grid>
+
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Grid.RowDefinitions >
+                    <RowDefinition/>
+                    <RowDefinition Height="350"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="1"  BorderBrush="#A44689" BorderThickness="2" CornerRadius="20, 20, 20, 20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="4.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Border Grid.Column="1" >
+                                <TextBox Height="30" Background="#212433" BorderThickness="2" BorderBrush="#A44689" Margin="-8,4,3,4" >
+                                    <TextBox.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="16"/>
+                                        </Style>
+                                    </TextBox.Resources>
+                                </TextBox>
+                            </Border>
+                            <Image Source="/icons8-search-50 (1).png" Stretch="Fill" Margin="10,5,7,5" RenderTransformOrigin="1.114,0.897"/>
+                        </Grid>
+                    </Border>
+                    <Image Margin="11,6,231,9" Source="/icons8-вертикальный-микшер-настроек-24.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-90.057"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+
+                </Grid>
+                <Border Background="#12172F" Grid.Column="0" Grid.Row="1" Margin="0 15 0 10" CornerRadius="20">
+                    <StackPanel>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                        <TextBlock Background="#A44689" Foreground="white" Margin="35 15 10 15" Height="25"/>
+                    </StackPanel>
+                </Border>
+                <Image Margin="0,28,237,292" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+                <Image Margin="0,82,237,238" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+                <Image Margin="0,137,237,183" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+                <Image Margin="0,192,237,128" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+                <Image Margin="0,247,237,73" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+                <Image Margin="3,302,234,18" Grid.Row="1" Source="/icons8-голова-человека-30.png" Stretch="Fill"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
